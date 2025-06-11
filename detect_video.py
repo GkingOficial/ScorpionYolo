@@ -3,10 +3,10 @@ import cv2
 
 
 video_path = "./videos/Scorpion_Amazing_Animals.mp4"
-model_path = "runs/detect/train/weights/best.pt"
+model_path = "runs/detect/train3/weights/best.pt"
 
-model = YOLO("yolov8n.pt")
-# model = YOLO(model_path)
+# model = YOLO("yolov8m.pt")
+model = YOLO(model_path)
 cap = cv2.VideoCapture(0)
 
 # save_output = True
