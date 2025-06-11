@@ -1,5 +1,5 @@
-train: scorpion_dataset/images/train
-val: scorpion_dataset/images/val
+train: E:/TCC/ScorpionYolo/datasets/scorpion_dataset/images/train
+val: E:/TCC/ScorpionYolo/datasets/scorpion_dataset/images/val
 
 nc: 1
 names: ['scorpion']

@@ -1,0 +1,150 @@
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from large pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from small pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|---------------------------------------------------------------------------|
+| Active memory         |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from large pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from small pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|---------------------------------------------------------------------------|
+| Requested memory      |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from large pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from small pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from large pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from small pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from large pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|       from small pool |      0 B   |      0 B   |      0 B   |      0 B   |
+|---------------------------------------------------------------------------|
+| Allocations           |       0    |       0    |       0    |       0    |
+|       from large pool |       0    |       0    |       0    |       0    |
+|       from small pool |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Active allocs         |       0    |       0    |       0    |       0    |
+|       from large pool |       0    |       0    |       0    |       0    |
+|       from small pool |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |       0    |       0    |       0    |       0    |
+|       from large pool |       0    |       0    |       0    |       0    |
+|       from small pool |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |       0    |       0    |       0    |       0    |
+|       from large pool |       0    |       0    |       0    |       0    |
+|       from small pool |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+Ultralytics 8.3.153  Python-3.10.16 torch-2.5.1+cu121 CUDA:0 (NVIDIA GeForce GTX 970, 4096MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=2, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=scorpion.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=50, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov8x.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train2, nbs=64, nms=False, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, rect=False, resume=False, retina_masks=False, save=True, save_conf=False, save_crop=False, save_dir=runs\detect\train2, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+Overriding model.yaml nc=80 with nc=1
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1      2320  ultralytics.nn.modules.conv.Conv             [3, 80, 3, 2]                 
+  1                  -1  1    115520  ultralytics.nn.modules.conv.Conv             [80, 160, 3, 2]               
+  2                  -1  3    436800  ultralytics.nn.modules.block.C2f             [160, 160, 3, True]           
+  3                  -1  1    461440  ultralytics.nn.modules.conv.Conv             [160, 320, 3, 2]              
+  4                  -1  6   3281920  ultralytics.nn.modules.block.C2f             [320, 320, 6, True]           
+  5                  -1  1   1844480  ultralytics.nn.modules.conv.Conv             [320, 640, 3, 2]              
+  6                  -1  6  13117440  ultralytics.nn.modules.block.C2f             [640, 640, 6, True]           
+  7                  -1  1   3687680  ultralytics.nn.modules.conv.Conv             [640, 640, 3, 2]              
+  8                  -1  3   6969600  ultralytics.nn.modules.block.C2f             [640, 640, 3, True]           
+  9                  -1  1   1025920  ultralytics.nn.modules.block.SPPF            [640, 640, 5]                 
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 12                  -1  3   7379200  ultralytics.nn.modules.block.C2f             [1280, 640, 3]                
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 15                  -1  3   1948800  ultralytics.nn.modules.block.C2f             [960, 320, 3]                 
+ 16                  -1  1    922240  ultralytics.nn.modules.conv.Conv             [320, 320, 3, 2]              
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 18                  -1  3   7174400  ultralytics.nn.modules.block.C2f             [960, 640, 3]                 
+ 19                  -1  1   3687680  ultralytics.nn.modules.conv.Conv             [640, 640, 3, 2]              
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 21                  -1  3   7379200  ultralytics.nn.modules.block.C2f             [1280, 640, 3]                
+ 22        [15, 18, 21]  1   8718931  ultralytics.nn.modules.head.Detect           [1, [320, 640, 640]]          
+Model summary: 209 layers, 68,153,571 parameters, 68,153,555 gradients, 258.1 GFLOPs
+
+Transferred 589/595 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed 
+[34m[1mtrain: [0mFast image access  (ping: 0.20.0 ms, read: 1039.1549.9 MB/s, size: 349.4 KB)
+[34m[1mtrain: [0mScanning E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\train...:   0%|          | 0/80 [00:00<?, ?it/s][34m[1mtrain: [0mScanning E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\train... 80 images, 0 backgrounds, 0 corrupt: 100%|##########| 80/80 [00:00<00:00, 1289.36it/s]
+[34m[1mtrain: [0mNew cache created: E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\train.cache
+[34m[1mval: [0mFast image access  (ping: 0.20.0 ms, read: 420.5317.6 MB/s, size: 284.2 KB)
+[34m[1mval: [0mScanning E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\val...:   0%|          | 0/20 [00:00<?, ?it/s][34m[1mval: [0mScanning E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\val... 20 images, 0 backgrounds, 0 corrupt: 100%|##########| 20/20 [00:00<00:00, 800.42it/s]
+[34m[1mval: [0mNew cache created: E:\TCC\ScorpionYolo\datasets\scorpion_dataset\labels\val.cache
+Plotting labels to runs\detect\train2\labels.jpg... 
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.002, momentum=0.9) with parameter groups 97 weight(decay=0.0), 104 weight(decay=0.0005), 103 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns\detect\train2[0m
+Starting training for 50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/40 [00:00<?, ?it/s]  0%|          | 0/40 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "E:\TCC\ScorpionYolo\detect_image.py", line 37, in <module>
+    train_model()
+  File "E:\TCC\ScorpionYolo\detect_image.py", line 10, in train_model
+    model.train(
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\engine\model.py", line 797, in train
+    self.trainer.train()
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\engine\trainer.py", line 227, in train
+    self._do_train(world_size)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\engine\trainer.py", line 406, in _do_train
+    loss, self.loss_items = self.model(batch)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\tasks.py", line 137, in forward
+    return self.loss(x, *args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\tasks.py", line 336, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\tasks.py", line 138, in forward
+    return self.predict(x, *args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\tasks.py", line 156, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\tasks.py", line 179, in _predict_once
+    x = m(x)  # run
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\modules\head.py", line 120, in forward
+    x[i] = torch.cat((self.cv2[i](x[i]), self.cv3[i](x[i])), 1)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\container.py", line 250, in forward
+    input = module(input)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\ultralytics\nn\modules\conv.py", line 80, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "E:\Miniconda3\envs\env_yolo\lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 1.41 GiB is free. Of the allocated memory 1.85 GiB is allocated by PyTorch, and 10.55 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
